@@ -7,7 +7,7 @@
     margin-bottom: 0; 
     padding-bottom: 0;
   }
-  
+
   .navbar {
     display: flex;
     justify-content: space-between;

@@ -112,8 +112,6 @@ export default function Customers() {
     <div>
       <h2>Klienci</h2>
       <div>
-        {/* Pola formularza do dodawania/edytowania klienta */}
-        {/* ... (tutaj umieść pola formularza) */}
         <button onClick={handleSubmit}>{editing ? 'Aktualizuj Klienta' : 'Dodaj Klienta'}</button>
         {editing && <button onClick={resetForm}>Anuluj Edycję</button>}
       </div>
