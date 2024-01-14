@@ -3,6 +3,7 @@
 @tailwind utilities;
 
 body {
+  @apply min-h-screen bg-gradient-to-tr from-rose-100 to-teal-100;
   margin: 0;
   font-family: -apple-system, BlinkMPacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',

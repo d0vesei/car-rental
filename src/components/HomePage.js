@@ -1,21 +1,25 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import 'tailwindcss/tailwind.css';
 
 
 export default function HomePage() {
   return (
-    <div className="container mx-auto px-4 py-8">
-      <nav className="flex justify-between items-center py-4">
-        <NavLink to="/customers" className="text-indigo-600 hover:text-indigo-800 font-semibold">Klienci</NavLink>
-        <NavLink to="/reservations" className="text-indigo-600 hover:text-indigo-800 font-semibold">Rezerwacje</NavLink>
-        <NavLink to="/cars" className="text-indigo-600 hover:text-indigo-800 font-semibold">Samochody</NavLink>
-      </nav>
+    <div className="pt-16"> 
+       <nav className="fixed top-0 w-full bg-white z-50 shadow-lg">
+        <div className="flex justify-end items-center mr-1">
+          <NavLink to="/reservations" class="switch ghost info mr-4"> Rezerwacje </NavLink>
+          <NavLink to="/cars" class="switch ghost info"> Samochody </NavLink>
+        </div>      
+        </nav>
 
-      <header className="text-center my-12">
+      <div className="container mx-auto px-4 py-8">
+      <header className="text-center">
         <h1 className="text-4xl font-bold text-gray-800 mb-4">Witamy w Wypożyczalni Samochodów Abel!</h1>
         <p className="text-lg text-gray-600">Znajdź idealny samochód na każdą okazję.</p>
-        <button className="mt-6 bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-700 transition duration-300">Zarezerwuj teraz</button>
+        <Link to="/reservations" class="btn outline info mr-4 my-4"> Zarezerwuj teraz </Link>
+        <Link to="/cars" class="btn outline info"> Sprawdź dostępne samochody </Link>
       </header>
 
       <main className="mb-8">
@@ -27,10 +31,10 @@ export default function HomePage() {
           Rozumiemy, że każdy klient ma inne potrzeby, dlatego nasza oferta jest dostosowana do indywidualnych preferencji. Dla osób ceniących komfort i elegancję mamy w ofercie samochody premium, a dla tych, którzy szukają ekologicznych rozwiązań, proponujemy nowoczesne pojazdy elektryczne i hybrydowe. Dbamy o to, by każdy klient znalazł u nas auto idealnie dopasowane do swoich potrzeb, czy to na krótką podróż po mieście, czy na dłuższą wyprawę.
           Wypożyczalnia Samochodów Abel to nie tylko auta, to także wyjątkowa obsługa klienta. Nasz doświadczony zespół jest zawsze gotowy służyć pomocą i doradzić w wyborze najlepszego pojazdu. Dodatkowo, oferujemy elastyczne warunki wynajmu, atrakcyjne ceny oraz szereg dodatkowych usług, takich jak ubezpieczenie, pomoc drogowa czy opcje dostawy samochodu pod wskazany adres.
           Jesteśmy przekonani, że nasze zaangażowanie w zapewnienie najwyższej jakości usług oraz nasza pasja do motoryzacji sprawią, że każda podróż z Wypożyczalnią Samochodów Abel będzie nie tylko komfortowa, ale i niezapomniana. Zapraszamy do skorzystania z naszej oferty i doświadczenia wyjątkowości naszej wypożyczalni.
-          
           </p>
         </section>
       </main>
+      </div>
 
       <footer className="text-center py-8 text-gray-600">
         <p>© 2024 Wypożyczalnia Abel. Wszelkie prawa zastrzeżone.</p>
