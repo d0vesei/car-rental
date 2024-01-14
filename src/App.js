@@ -4,6 +4,7 @@ import 'tailwindcss/tailwind.css';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import HomePage from './components/HomePage';
 import CarsImage from './main-carrental.png';
+import ReservationsPage from './components/ReservationsPage';
 
 function App() {
   useEffect(() => {
@@ -25,6 +26,7 @@ function App() {
         {/* Routing dla różnych stron */}
         <Routes>
           <Route path="/" element={<HomePage />} exact />
+          <Route path="/reservations" element={<ReservationsPage />}></Route>
         </Routes>
       </div>
     </Router>

@@ -1,13 +1,14 @@
 const express = require('express');
-
-//  Deklaracja modeli do wykorzystania za pomoca endpointow 
 const mongoose = require('mongoose');
+const cors = require('cors');
+
 const Car = require('./models/cars'); // Import modelu Car 
 const Customer = require('./models/customers'); // Import modelu Customer 
 const Reservation = require('./models/reservations'); // Import modelu Reservation 
 
 const app = express();
-app.use(express.json()); // Middleware do parsowania JSON
+app.use(cors());
+app.use(express.json()); 
 
 // Połączenie z MongoDB
 mongoose.connect('mongodb://localhost:27017/carrental', {
@@ -170,7 +171,5 @@ app.post('/customers', async (req, res) => {
   });
 
 // Uruchomienie serwera
-const PORT = process.env.PORT || 5000;
-app.listen(PORT, () => {
-  console.log(`Serwer działa na porcie ${PORT}`);
-});
+const port = 3001;
+app.listen(port, () => console.log(`Serwer działa na porcie ${port}`));
