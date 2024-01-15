@@ -24,7 +24,6 @@ function App() {
           <div className="absolute bottom-0 left-0 w-full h-20 bg-gradient-to-b from-transparent via-transparent to-rose-100" />
         </header>
 
-        {/* Routing dla różnych stron */}
         <Routes>
           <Route path="/" element={<HomePage />} exact />
           <Route path="/reservations" element={<ReservationsPage />}></Route>

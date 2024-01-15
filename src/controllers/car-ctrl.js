@@ -1,4 +1,13 @@
-const Car = require('car-rental\backend\models\cars.js'); 
+const Car = require('../models/car'); 
+
+const getCarsList = async (req, res) => {
+    try {
+      const cars = await Car.find({}, 'make model'); // Pobiera tylko 'make' i 'model' dla /reservations
+      res.status(200).json(cars);
+    } catch (error) {
+      res.status(400).send({message: "Błąd przy pobieraniu samochodów", error});
+    }
+  };
 
 // Pobieranie wszystkich samochodów
 exports.getCars = async (req, res) => {

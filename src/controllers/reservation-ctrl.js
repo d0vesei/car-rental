@@ -1,4 +1,4 @@
-const Reservation = require('car-rental\backend\models\reservations.js');
+const Reservation = require('car-rental\backend\models\reservation');
 
 createReservation = async (req, res) => {
     const body = req.body;
@@ -113,6 +113,8 @@ getReservations = async (req, res) => {
         return res.status(200).json({ success: true, data: reservations });
     }).catch(err => console.log(err));
 };
+
+
 
 module.exports = {
     createReservation,

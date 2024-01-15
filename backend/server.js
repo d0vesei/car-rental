@@ -2,9 +2,9 @@ const express = require('express');
 const mongoose = require('mongoose');
 const cors = require('cors');
 
-const Car = require('./models/cars.js'); // Import modelu Car 
-const Customer = require('./models/customers.js'); // Import modelu Customer 
-const Reservation = require('./models/reservations.js'); // Import modelu Reservation 
+const Car = require('./models/cars'); // Import modelu Car 
+const Customer = require('./models/customers'); // Import modelu Customer 
+const Reservation = require('./models/reservations'); // Import modelu Reservation 
 
 const app = express();
 app.use(cors());

@@ -61,18 +61,13 @@ const ReservationsPage = () => {
     
     <form onSubmit={handleSubmit} className="space-y-4">
         <div>
-            <label className="block text-sm font-medium text-gray-700">Marka Samochodu:</label>
+            <label className="block text-sm font-medium text-gray-700">Model samochodu:</label>
             <select name="carMake" onChange={handleInputChange} className="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500">
-                {cars.map(car => (
-                    <option key={car._id} value={car.make}>{car.make}</option>
-                ))}
+            {cars.map(car => (
+            <option key={car._id} value={car.make + ' ' + car.model}>{car.make + ' ' + car.model}</option>
+            ))}
             </select>
-            <label className="block text-sm font-medium text-gray-700">Model Samochodu:</label>
-            <select name="carModel" onChange={handleInputChange} className="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500">
-                {cars.map(car => (
-                    <option key={car._id} value={car.model}>{car.model}</option>
-                ))}
-            </select>
+
         </div>
 
 		<label className="block">Data odbioru:</label>
