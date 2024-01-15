@@ -1,0 +1,62 @@
+[
+    {
+        "firstName": "Jan",
+        "lastName": "Kowalski",
+        "email": "jan.kowalski@example.com",
+        "phone": "123456789",
+        "licenseNumber": "DR1234567",
+        "address": {
+            "street": "Ulica Kwiatowa 10",
+            "city": "Warszawa",
+            "postalCode": "00-001"
+        }
+    },
+    {
+        "firstName": "Anna",
+        "lastName": "Zawadzka",
+        "email": "anna.zawadzka@example.com",
+        "phone": "987654321",
+        "licenseNumber": "DR7654321",
+        "address": {
+            "street": "Ulica S\u0142oneczna 5",
+            "city": "Krak\u00f3w",
+            "postalCode": "30-001"
+        }
+    },
+    {
+        "firstName": "Marek",
+        "lastName": "Wi\u015bniewski",
+        "email": "marek.wisniewski@example.com",
+        "phone": "234567890",
+        "licenseNumber": "DR2345678",
+        "address": {
+            "street": "Ulica Ogrodowa 2",
+            "city": "Gda\u0144sk",
+            "postalCode": "80-001"
+        }
+    },
+    {
+        "firstName": "Katarzyna",
+        "lastName": "Maj",
+        "email": "katarzyna.maj@example.com",
+        "phone": "345678901",
+        "licenseNumber": "DR3456789",
+        "address": {
+            "street": "Ulica Le\u015bna 8",
+            "city": "Wroc\u0142aw",
+            "postalCode": "50-001"
+        }
+    },
+    {
+        "firstName": "Piotr",
+        "lastName": "Nowak",
+        "email": "piotr.nowak@example.com",
+        "phone": "456789012",
+        "licenseNumber": "DR4567890",
+        "address": {
+            "street": "Ulica Morska 14",
+            "city": "Sopot",
+            "postalCode": "81-001"
+        }
+    }
+]

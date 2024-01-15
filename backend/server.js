@@ -171,5 +171,5 @@ app.post('/customers', async (req, res) => {
   });
 
 // Uruchomienie serwera
-const port = 3001;
+const port = 5771;
 app.listen(port, () => console.log(`Serwer działa na porcie ${port}`));

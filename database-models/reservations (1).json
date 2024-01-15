@@ -1,0 +1,37 @@
+[
+    {
+        "carId": "ObjectId('507f1f77bcf86cd799439011')",
+        "customerId": "ObjectId('507f191e810c19729de860ea')",
+        "pickupDate": "2024-01-10T10:00:00.000Z",
+        "returnDate": "2024-01-15T10:00:00.000Z",
+        "status": "confirmed"
+    },
+    {
+        "carId": "ObjectId('507f1f77bcf86cd799439012')",
+        "customerId": "ObjectId('507f191e810c19729de860eb')",
+        "pickupDate": "2024-02-20T10:00:00.000Z",
+        "returnDate": "2024-02-25T10:00:00.000Z",
+        "status": "completed"
+    },
+    {
+        "carId": "ObjectId('507f1f77bcf86cd799439013')",
+        "customerId": "ObjectId('507f191e810c19729de860ec')",
+        "pickupDate": "2024-03-15T09:00:00.000Z",
+        "returnDate": "2024-03-20T18:00:00.000Z",
+        "status": "confirmed"
+    },
+    {
+        "carId": "ObjectId('507f1f77bcf86cd799439014')",
+        "customerId": "ObjectId('507f191e810c19729de860ed')",
+        "pickupDate": "2024-04-10T12:00:00.000Z",
+        "returnDate": "2024-04-15T16:00:00.000Z",
+        "status": "completed"
+    },
+    {
+        "carId": "ObjectId('507f1f77bcf86cd799439015')",
+        "customerId": "ObjectId('507f191e810c19729de860ee')",
+        "pickupDate": "2024-05-05T14:00:00.000Z",
+        "returnDate": "2024-05-10T11:00:00.000Z",
+        "status": "cancelled"
+    }
+]

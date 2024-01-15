@@ -7,6 +7,8 @@ import CarsImage from './main-carrental.png';
 import ReservationsPage from './components/ReservationsPage';
 import CarsPage from './components/CarsPage';
 
+
+
 function App() {
   useEffect(() => {
     document.body.classList.add('min-h-screen', 'bg-gradient-to-tr', 'from-rose-100', 'to-teal-100');
