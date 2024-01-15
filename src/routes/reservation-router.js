@@ -1,5 +1,5 @@
 const express = require('express');
-const ReservationCtrl = require('../controllers/reservation-ctrl');
+const ReservationCtrl = require('../controllers/reservation-ctrl.js');
 const router = express.Router();
 
 router.post('/reservation', ReservationCtrl.createReservation);
