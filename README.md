@@ -12,15 +12,16 @@ Technologie użyte przy projektowaniu aplikacji:
 
 ## Zrzuty ekranu
 
-  Widok głównej strony:
+  Widok głównej strony:\
+
 ![App Screenshot](https://i.ibb.co/hswVhms/01.png)
 
 
-  Formularz rezerwacji (model samochodu wybierany z listy przez użytkownika):
+  Formularz rezerwacji (model samochodu wybierany z listy przez użytkownika): 
 ![App Screenshot](https://i.ibb.co/Pj5ZNhD/02.png)
 
 
-  Widok galerii samochodów dostępnych w wypożyczalni
+  Widok galerii samochodów dostępnych w wypożyczalni:
 ![App Screenshot](https://i.ibb.co/mNb1LXf/03.png)
 
 
