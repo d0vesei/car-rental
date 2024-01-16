@@ -12,12 +12,7 @@ const reservationSchema = new mongoose.Schema({
     required: true
   },
   pickupDate: Date,
-  returnDate: Date,
-  status: {
-    type: String,
-    enum: ['confirmed', 'completed', 'cancelled'],
-    default: 'confirmed'
-  }
+  returnDate: Date
 });
 
 module.exports = mongoose.model('Reservation', reservationSchema);

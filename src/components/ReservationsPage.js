@@ -4,14 +4,14 @@ import axios from 'axios';
 const ReservationsPage = () => {
     const [cars, setCars] = useState([]);
     const [reservation, setReservation] = useState({
-        car_id: '',
+        carId: '',
         carMake: '',
         carModel: '',
         carYear: '',
         pickupDate: '',
         returnDate: '',
+        customerId: '',
         customer: {
-            customer_id: '',
             firstName: '',
             lastName: '',
             email: '',
@@ -49,13 +49,11 @@ const ReservationsPage = () => {
     event.preventDefault();
     try {
         const reservationData = {
-            carId: reservation.car_id,
-            carMake: reservation.carMake,
-            carModel: reservation.carModel,
+            carId: reservation.carId,
             pickupDate: reservation.pickupDate,
             returnDate: reservation.returnDate,
+            customerId: reservation.customer.customerId,
             customer: {
-                customerId: reservation.customer.customer_id,
                 firstName: reservation.customer.firstName,
                 lastName: reservation.customer.lastName,
                 email: reservation.customer.email,
