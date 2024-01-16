@@ -5,7 +5,9 @@ export default function Cars() {
   const [newCar, setNewCar] = useState({
     make: '',
     model: '',
-    year: ''
+    year: '',
+    image: '', 
+    price: ''
   });
   const [editing, setEditing] = useState(false);
   const [editingId, setEditingId] = useState(null);

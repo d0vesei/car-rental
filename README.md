@@ -12,7 +12,7 @@ Technologie użyte przy projektowaniu aplikacji:
 
 ## Zrzuty ekranu
 
-![App Screenshot](https://i.ibb.co/hswVhms/01.png)
+![App Screenshot](https://i.ibb.co/hswVhms/01.png)(https://i.ibb.co/Pj5ZNhD/02.png)(https://i.ibb.co/mNb1LXf/03.png)
 
 
 ## Uruchomienie aplikacji
@@ -27,6 +27,7 @@ Do uruchomienia serwera Express wymagane jest wykonanie w folderze *backend* pol
 ```bash
   node .\server.js
 ```
+Serwer działa na porcie 5771.
 
 ## Baza danych
 

@@ -2,51 +2,72 @@
     {
         "make": "Toyota",
         "model": "Corolla",
-        "year": 2021
+        "year": 2021,
+        "image": "https://images.hgmsites.net/lrg/2021-toyota-corolla-xle-cvt-natl-angular-front-exterior-view_100754880_l.jpg",
+		"price": "200zł/dzień"
     },
     {
         "make": "Honda",
         "model": "Civic",
-        "year": 2020
+        "year": 2020,
+        "image": "https://images.hgmsites.net/lrg/2020-honda-civic-sport-manual-angular-front-exterior-view_100751892_l.jpg",
+		"price": "400zł/dzień"
+
     },
     {
         "make": "Ford",
         "model": "Mustang",
-        "year": 2022
+        "year": 2022,
+        "image": "https://images.hgmsites.net/lrg/2022-ford-mustang-mach-e-premium-awd-angular-front-exterior-view_100820455_l.jpg",
+		"price": "400zł/dzień"
     },
     {
         "make": "Tesla",
         "model": "Model 3",
-        "year": 2023
+        "year": 2023,
+		"image": "https://images.hgmsites.net/lrg/2023-tesla-model-3-rwd-angular-front-exterior-view_100881613_l.jpg",
+		"price": "420zł/dzień"
     },
     {
         "make": "Chevrolet",
         "model": "Camaro",
-        "year": 2019
+        "year": 2019,
+		"image": "https://images.hgmsites.net/lrg/2019-chevrolet-camaro-2-door-coupe-zl1-w-1se-angular-front-exterior-view_100699066_l.jpg",
+		"price": "480zł/dzień"
     },
     {
         "make": "BMW",
         "model": "3 Series",
-        "year": 2018
+        "year": 2018,
+		"image": "https://images.hgmsites.net/med/2018-bmw-3-series-330i-sedan-angular-front-exterior-view_100628141_m.jpg",
+		"price": "480zł/dzień"
     },
     {
         "make": "Mercedes-Benz",
         "model": "C-Class",
-        "year": 2020
+        "year": 2020,
+		"image": "https://images.hgmsites.net/lrg/2020-mercedes-benz-c-class-angular-front-exterior-view_100745106_l.jpg",
+		"price": "430zł/dzień"
     },
     {
         "make": "Audi",
         "model": "A4",
-        "year": 2021
+        "year": 2021,
+		"image": "https://images.hgmsites.net/med/2021-audi-a4-premium-45-tfsi-quattro-angular-front-exterior-view_100764772_m.jpg",
+		"price": "450zł/dzień"
     },
     {
         "make": "Volkswagen",
         "model": "Golf",
-        "year": 2019
+        "year": 2019,
+		"image": "https://images.hgmsites.net/lrg/2019-volkswagen-golf-2-0t-se-dsg-angular-front-exterior-view_100688298_l.jpg",
+		"price": "500zł/dzień"
     },
     {
         "make": "Porsche",
         "model": "911",
-        "year": 2022
+        "year": 2022,
+		"image": "https://images.hgmsites.net/lrg/2022-porsche-911-carrera-cabriolet-angular-front-exterior-view_100798225_l.jpg",
+		"price": "1000zł/dzień"	
     }
 ]

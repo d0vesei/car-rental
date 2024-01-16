@@ -4,11 +4,14 @@ import axios from 'axios';
 const ReservationsPage = () => {
     const [cars, setCars] = useState([]);
     const [reservation, setReservation] = useState({
+        car_id: '',
         carMake: '',
         carModel: '',
+        carYear: '',
         pickupDate: '',
         returnDate: '',
         customer: {
+            customer_id: '',
             firstName: '',
             lastName: '',
             email: '',
@@ -17,28 +20,50 @@ const ReservationsPage = () => {
     });
 
     useEffect(() => {
-        axios.get('/api/cars')
-            .then(response => setCars(response.data))
+        axios.get('http://localhost:5771/cars')
+        .then(response => {
+            setCars(response.data);
+                })
             .catch(error => console.error('Error fetching cars:', error));
+            // eslint-disable-next-line
     }, []);
 
     const handleInputChange = (event) => {
         const { name, value } = event.target;
-        setReservation({ ...reservation, [name]: value });
+    
+        if (name.startsWith('customer.')) {
+            const customerKey = name.split('.')[1]; 
+            setReservation({
+                ...reservation,
+                customer: {
+                    ...reservation.customer,
+                    [customerKey]: value
+                }
+            });
+        } else {
+            setReservation({ ...reservation, [name]: value });
+        }
     };
 
     const handleSubmit = async (event) => {
     event.preventDefault();
     try {
         const reservationData = {
+            carId: reservation.car_id,
             carMake: reservation.carMake,
             carModel: reservation.carModel,
             pickupDate: reservation.pickupDate,
-			returnDate: reservation.returnDate,
-			customer: reservation.customer
+            returnDate: reservation.returnDate,
+            customer: {
+                customerId: reservation.customer.customer_id,
+                firstName: reservation.customer.firstName,
+                lastName: reservation.customer.lastName,
+                email: reservation.customer.email,
+                phone: reservation.customer.phone
+            }
         };
 
-        const response = await axios.post('http://localhost:3000/api/reservations', reservationData);
+        const response = await axios.post('http://localhost:5771/reservations', reservationData);
         if(response.status === 201) {
             alert('Rezerwacja została pomyślnie dodana.');
         }
@@ -62,10 +87,13 @@ const ReservationsPage = () => {
     <form onSubmit={handleSubmit} className="space-y-4">
         <div>
             <label className="block text-sm font-medium text-gray-700">Model samochodu:</label>
-            <select name="carMake" onChange={handleInputChange} className="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500">
-            {cars.map(car => (
-            <option key={car._id} value={car.make + ' ' + car.model}>{car.make + ' ' + car.model}</option>
-            ))}
+            <select name="car_id" onChange={handleInputChange} className="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500">
+            {cars.map(car => {
+                // console.log(car);
+                return (
+            <option key={car._id} value={car._id}>{car.make + ' ' + car.model + ' (' + car.year + ')'}</option>
+            );
+        })}
             </select>
 
         </div>
