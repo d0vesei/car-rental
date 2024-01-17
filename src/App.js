@@ -6,6 +6,8 @@ import HomePage from './components/HomePage';
 import CarsImage from './main-carrental.png';
 import ReservationsPage from './components/ReservationsPage';
 import CarsPage from './components/CarsPage';
+import StatusPage from './components/StatutPage';
+
 
 
 
@@ -30,6 +32,7 @@ function App() {
           <Route path="/" element={<HomePage />} exact />
           <Route path="/reservations" element={<ReservationsPage />}></Route>
           <Route path="/cars" element={<CarsPage />}></Route>
+          <Route path="/statut" element={<StatusPage />}></Route>
         </Routes>
       </div>
     </Router>

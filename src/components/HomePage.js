@@ -7,13 +7,6 @@ import 'tailwindcss/tailwind.css';
 export default function HomePage() {
   return (
     <div className="pt-16"> 
-       <nav className="fixed top-0 w-full bg-white z-50 shadow-lg">
-        <div className="flex justify-end items-center mr-1">
-          <NavLink to="/reservations" class="switch ghost info mr-4"> Rezerwacje </NavLink>
-          <NavLink to="/cars" class="switch ghost info"> Samochody </NavLink>
-        </div>      
-        </nav>
-
       <div className="container mx-auto px-4 py-8">
       <header className="text-center">
         <h1 className="text-4xl font-bold text-gray-800 mb-4">Witamy w Wypożyczalni Samochodów Abel!</h1>
@@ -81,6 +74,7 @@ export default function HomePage() {
 
       <footer className="text-center py-8 text-gray-600">
         <p>© 2024 Wypożyczalnia Abel. Wszelkie prawa zastrzeżone.</p>
+        <p> <Link to="/statut"> Regulamin wypożyczalni </Link></p>
       </footer>
     </div>
   );

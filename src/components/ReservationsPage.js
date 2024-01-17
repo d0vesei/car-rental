@@ -30,6 +30,7 @@ const ReservationsPage = () => {
 
     const handleInputChange = (event) => {
         const { name, value } = event.target;
+        console.log("Name:", name, "Value:", value);
     
         if (name.startsWith('customer.')) {
             const customerKey = name.split('.')[1]; 
@@ -52,7 +53,7 @@ const ReservationsPage = () => {
             carId: reservation.carId,
             pickupDate: reservation.pickupDate,
             returnDate: reservation.returnDate,
-            customerId: reservation.customer.customerId,
+            customerId: reservation.customerId,
             customer: {
                 firstName: reservation.customer.firstName,
                 lastName: reservation.customer.lastName,
@@ -85,7 +86,7 @@ const ReservationsPage = () => {
     <form onSubmit={handleSubmit} className="space-y-4">
         <div>
             <label className="block text-sm font-medium text-gray-700">Model samochodu:</label>
-            <select name="car_id" onChange={handleInputChange} className="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500">
+            <select name="carId" onChange={handleInputChange} className="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500">
             {cars.map(car => {
                 // console.log(car);
                 return (
