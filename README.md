@@ -50,4 +50,4 @@ Przykładowe modele danych do wykorzystania w bazie danych znajdują się w fold
 
 __Przedstawione dane zostały wygenerowane z użyciem *ChatGPT*, nie przedstawiają rzeczywistych danych.__
 ## 🚀 O mnie
-Julia. GEEK, cybersec (mainly blue, soon red 😶‍🌫️).
+Julia. GEEK, cybersec (mainly blue 😶‍🌫️).
